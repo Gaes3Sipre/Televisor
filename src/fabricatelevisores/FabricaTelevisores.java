@@ -20,7 +20,7 @@ public class FabricaTelevisores {
     
     tv1.encender();
     
-    int pulgadas=tv1.calcularPulgadas(60.5, 30.2);
+    double pulgadas=tv1.calcularPulgadas(60.5, 30.2);
         System.out.println(pulgadas);
     
     

@@ -40,14 +40,14 @@ public class Televisor {
 
     }
 
-    public int calcularPulgadas(double largo, double alto) {
+    public double calcularPulgadas(double largo, double alto) {
 
         double a = Math.pow(alto, 2);
         double b = Math.pow(largo, 2);
         double hi=a+b;
         hi = Math.round(Math.pow(hi,(0.5)));
 
-        return (int)(hi);
+        return (double)(hi);
     }
 
 }
