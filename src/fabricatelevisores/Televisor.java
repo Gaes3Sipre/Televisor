@@ -7,47 +7,73 @@ package fabricatelevisores;
 
 /**
  *
- * @author alejozepol
- * @
+ * @author alejozepol @
  */
 public class Televisor {
 
-    private String marca;
-    private double largo;
-    private double alto;
-    private Puerto[] puerto;
+	private String marca;
+	private double largo;
+	private double alto;
+	private Puerto[] puerto;
 
-    protected boolean estado;
-    protected byte volumen;
-    protected Puerto entrada;
-    protected Canal canal;
-    protected boolean mute;
+	protected boolean estado;
+	protected byte volumen;
+	protected Puerto entrada;
+	protected Canal canal;
+	protected boolean mute;
 
-    //Metodos
-    public void encender() {
-        estado = estado ? !estado : !estado;
-    }
+	// Metodos
+	public void encender() {
+		estado = estado ? !estado : !estado;
+	}
 
-    public Televisor(String marca, double largo, double alto) {
-        this.marca = marca;
-        this.largo = largo;
-        this.alto = alto;
-        /**
-         * @param marco indica la marca de la cual es el televisor
-         * @param largo Indica lo largo del televisor
-         * @param alto indica el alto del televisor Este metodo un metodo
-         */
+	public Televisor(String marca, double largo, double alto) {
+		this.marca = marca;
+		this.largo = largo;
+		this.alto = alto;
+		/**
+		 * @param marco
+		 *            indica la marca de la cual es el televisor
+		 * @param largo
+		 *            Indica lo largo del televisor
+		 * @param alto
+		 *            indica el alto del televisor Este metodo un metodo
+		 */
 
-    }
+	}
 
-    public double calcularPulgadas(double largo, double alto) {
+	
+	public static int bajarVolumen(int a, int b) {
+		int vol = 100;
 
-        double a = Math.pow(alto, 2);
-        double b = Math.pow(largo, 2);
-        double hi=a+b;
-        hi = Math.round(Math.pow(hi,(0.5)));
+		if (a < 100) {
+			if (a >= 100) {
+				vol = a - b;
+				System.out.println("volumen" + vol);
+			} else {
+				System.out.println("volumen" + vol + "  max");
 
-        return (double)(hi);
-    }
+			}
+		} else {
+			if (b >= 0) {
+				vol = b - a;
+				System.out.println("volumen" + vol);
+			} else {
+				System.out.println("volumen" + vol + " min");
+
+			}
+		}
+		return (byte) (vol);
+	}
+
+	public double calcularPulgadas(double largo, double alto) {
+
+		double a = Math.pow(alto, 2);
+		double b = Math.pow(largo, 2);
+		double hi = a + b;
+		hi = Math.round(Math.pow(hi, (0.5)));
+
+		return (double) (hi);
+	}
 
 }
