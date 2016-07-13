@@ -39,10 +39,10 @@ public class MenuTV {
                  case 2: 
                      System.out.println(" presione !ELEGIR! canal"); 
                      System.out.println(" ...................."); 
-                     System.out.println(" canal 9 FRECUENCIA LATINA"); 
-                     System.out.println(" canal 11 AMERICA TV"); 
+                     System.out.println(" canal 9 Institucional"); 
+                     System.out.println(" canal 11 TNT"); 
                      System.out.println(" canal 13 ATV"); 
-                     System.out.println(" canal 4 RED GLOBAL"); 
+                     System.out.println(" canal 4 RCN"); 
                      System.out.println(" .......................");
                      tv1.CambiarCanal(sc.next());
                      break; 
