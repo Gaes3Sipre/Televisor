@@ -22,6 +22,10 @@ public class Televisor {
 	protected Canal canal;
 	protected boolean mute;
 
+    Televisor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 	// Metodos
 	public void encender() {
 		estado = estado ? !estado : !estado;
@@ -75,5 +79,29 @@ public class Televisor {
 
 		return (double) (hi);
 	}
+
+    void EncenderTv(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void CambiarCanal(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void CantVolumen(int nextInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void Mute(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void CambiaraCable(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void AccesoInternet(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
