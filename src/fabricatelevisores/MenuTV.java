@@ -29,7 +29,6 @@ public class MenuTV {
              System.out.println("OP 6: Acceso a Internet");
              System.out.println("OP 7: apagar TV");
              System.out.println("=============================="); 
-             System.out.println("by MAURO MARTINEZ");
              opcion=sc.nextInt(); 
              switch (opcion) { 
                  case 1:
