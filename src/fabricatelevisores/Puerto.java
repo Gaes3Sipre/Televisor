@@ -10,6 +10,35 @@ package fabricatelevisores;
  * @author alejozepol
  */
 public class Puerto {
-    
-    Canal canal1= new Canal((byte) 1, "Caracol", "Canal Nacional");             
+	static byte hdmi;
+	static byte video;
+	static byte aire1;
+
+
+
+	public static void Video(boolean a) {
+	
+		Canal señalv = new Canal();
+		a = true;
+		señalv.video1(a);
+
+	}
+
+	public static void aire1(boolean a) {
+		
+		Canal señala = new Canal();
+		a = true;
+		señala.aire(a);
+	}
+
+	public static void hdmi(boolean a) {
+	
+		Canal señala = new Canal();
+		a = true;
+		señala.aire(a);
+        //METODO DE CANALES PRIVADOS  		
+		Canal señalv = new Canal();
+		a = true;
+		señalv.video1(a);
+	}
 }
