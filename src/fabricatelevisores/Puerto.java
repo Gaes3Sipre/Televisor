@@ -11,6 +11,5 @@ package fabricatelevisores;
  */
 public class Puerto {
     
-    byte numero;
-    String nombre;
+    Canal canal1= new Canal((byte) 1, "Caracol", "Canal Nacional");             
 }

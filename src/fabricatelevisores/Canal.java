@@ -13,9 +13,9 @@ import java.util.Scanner;
  */
 public class Canal {
 
-    byte[] numero;
-    String[] nombre;
-    String[] clasificacion;
+    byte numero;
+    String nombre;
+    String clasificacion;
 
     static int i[] = new int[1];
     static Scanner lectura = new Scanner(System.in);
@@ -41,6 +41,12 @@ public class Canal {
         aire[2][0] = "canal";
         aire[2][1] = "canal";
         aire[2][2] = "canal";
+    }
+
+    public Canal(byte numero, String nombre, String clasificacion) {
+        this.numero = numero;
+        this.nombre = nombre;
+        this.clasificacion = clasificacion;
     }
 
     public void video1(boolean conectado) {
