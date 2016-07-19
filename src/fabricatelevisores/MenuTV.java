@@ -17,6 +17,8 @@ public class MenuTV {
          Scanner sc=new Scanner(System.in); 
          System.out.println(" ");
          Televisor tv1=new Televisor();
+         Canal cal1 = new Canal();
+         Puerto port1 = new Puerto();
          int opcion; String op;
          do{ 
              System.out.println("QUE OPERACION DESEA REALIZAR");
@@ -26,7 +28,7 @@ public class MenuTV {
              System.out.println("OP 3: volumen");
              System.out.println("OP 4: mute"); 
              System.out.println("OP 5: Swtich cable"); 
-             System.out.println("OP 6: Acceso a Internet");
+//             System.out.println("OP 6: Acceso a Internet");
              System.out.println("OP 7: apagar TV");
              System.out.println("=============================="); 
              opcion=sc.nextInt(); 
@@ -43,7 +45,7 @@ public class MenuTV {
                      System.out.println(" canal 13 ATV"); 
                      System.out.println(" canal 4 RCN"); 
                      System.out.println(" .......................");
-                     tv1.CambiarCanal(sc.next());
+                     cal1.CambiarCanal(sc.next());
                      break; 
                  case 3: 
                      System.out.println( " voulumen entres 1 y 100"); 
@@ -55,12 +57,12 @@ public class MenuTV {
                      break;
                  case 5: 
                      System.out.println( "Esta seguro de cambiar a cable (SI/NO)");
-                     tv1.CambiaraCable(sc.next());
+                     port1.CambiaraCable(sc.next());
                      break; 
-                 case 6: 
-                     System.out.println( "Ingrese la IP de intenet"); 
-                     tv1.AccesoInternet(sc.next());
-                     break; 
+//                 case 6: 
+//                     System.out.println( "Ingrese la IP de intenet"); 
+//                     port1.AccesoInternet(sc.next());
+//                     break; 
                  default: 
                      break;
              } 
